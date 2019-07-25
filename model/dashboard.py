@@ -11,8 +11,8 @@ report_file_link = "https://rawcdn.githack.com/wirecard/reports/master/$project/
 fail_test = '<span style="color:red">FAIL</span>'
 pass_test = '<span style="color:green">PASS</span>'
 date_format = '%Y-%m-%d'
-html_header = '''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Wirecard Gateway Test Results</title><link href="https://file.myfontastic.com/YtqivGkm3YfAnbEZneHr89/icons.css" rel="stylesheet"/><link href="../css/simple.css" rel="stylesheet"/><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></head><body><main>'''
-html_test_header = '''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Wirecard Gateway Test Results</title><link href="https://file.myfontastic.com/YtqivGkm3YfAnbEZneHr89/icons.css" rel="stylesheet"/><link href="../css/simple.css" rel="stylesheet"/><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></head><body>'''
+html_header = '''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Wirecard Gateway Test Results</title><link href="https://file.myfontastic.com/YtqivGkm3YfAnbEZneHr89/icons.css" rel="stylesheet"/><link href="../css/simple.css" rel="stylesheet"/><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></head><body><main>'''
+html_test_header = '''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Wirecard Gateway Test Results</title><link href="https://file.myfontastic.com/YtqivGkm3YfAnbEZneHr89/icons.css" rel="stylesheet"/><link href="../css/simple.css" rel="stylesheet"/><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></head><body>'''
 
 ignore_folders = ["css", "model", ".git", ".idea", "output"]
 report_link_data = {}
