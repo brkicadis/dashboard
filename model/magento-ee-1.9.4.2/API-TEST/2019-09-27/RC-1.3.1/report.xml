@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="520.961" tests="15" failures="1">
+  <testsuite name="Root Suite" timestamp="2019-09-27T06:48:36" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Alipay test" timestamp="2019-09-27T06:56:02" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/AlipayTest.js" failures="1" time="48.236">
+    <testcase name="Alipay test should check the alipay payment process" time="48.236" classname="should check the alipay payment process">
+      <failure message="Waiting for element to be located By(css selector, .payAmount-area)
+Wait timed out after 30200ms" type="TimeoutError"><![CDATA[TimeoutError: Waiting for element to be located By(css selector, .payAmount-area)
+Wait timed out after 30200ms
+    at /home/travis/build/wirecard/magento-ee/node_modules/selenium-webdriver/lib/webdriver.js:841:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

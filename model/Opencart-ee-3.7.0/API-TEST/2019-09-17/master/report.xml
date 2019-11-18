@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="570.216" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-09-16T11:04:49" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Opencart najveca" timestamp="2019-09-16T11:04:49" tests="1" file="/home/travis/shopware/custom/plugins/WirecardElasticEngine/Tests/Selenium/Payments/PiaTest.js" failures="0" time="62.513">
+    <testcase name="Opencart najveca should check the pia payment process" time="62.513" classname="should check the pia payment process">
+    </testcase>
+  </testsuite>
+  <testsuite name="Credit Card test" timestamp="2019-09-16T11:05:59" tests="1" file="/home/travis/shopware/custom/plugins/WirecardElasticEngine/Tests/Selenium/Payments/CreditCardTest.js" failures="0" time="40.981">
+    <testcase name="Credit Card test should check the credit card payment process" time="40.981" classname="should check the credit card payment process">
+    </testcase>
+  </testsuite>
+  <testsuite name="Credit Card One-Click Checkout test (NOTE: has requirements)" timestamp="2019-09-16T11:06:46" tests="1" file="/home/travis/shopware/custom/plugins/WirecardElasticEngine/Tests/Selenium/Payments/CreditCardOneClickTest.js" failures="0" time="22.129">
+    <testcase name="Credit Card One-Click Checkout test (NOTE: has requirements) should check the credit card one-click payment process" time="22.129" classname="should check the credit card one-click payment process">
+    </testcase>
+  </testsuite>
+</testsuites>

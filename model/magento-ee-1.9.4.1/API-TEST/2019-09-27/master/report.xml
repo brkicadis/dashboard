@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="491.61800000000005" tests="15" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-09-27T06:48:40" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Magento 1 srednja master" timestamp="2019-09-27T06:48:40" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/PiaTest.js" failures="0" time="25.256">
+    <testcase name="Magento 1 srednja master should check the pia payment process" time="25.256" classname="should check the pia payment process">
+    </testcase>
+  </testsuite>
+  <testsuite name="Magento 1 srednja master" timestamp="2019-09-27T06:49:13" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/CreditCardTest.js" failures="0" time="33.972">
+    <testcase name="Magento 1 srednja master should check the credit card payment process" time="33.972" classname="should check the credit card payment process">
+    </testcase>
+  </testsuite>
+</testsuites>

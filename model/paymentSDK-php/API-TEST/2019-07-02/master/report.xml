@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="525.2719999999999" tests="15" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-07-02T12:58:12" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="paymentsdk" timestamp="2019-07-02T12:58:47" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/PayPal.js" failures="0" time="33.299">
+    <testcase name="paymentsdk" time="33.299" classname="should check the pay pal payment process">
+    </testcase>
+  </testsuite>
+</testsuites>

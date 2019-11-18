@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="940.6990000000001" tests="15" failures="5">
+  <testsuite name="Root Suite" timestamp="2019-09-27T06:48:44" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Alipay test" timestamp="2019-09-27T06:55:40" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/AlipayTest.js" failures="1" time="48.033">
+    <testcase name="Alipay test should check the alipay payment process" time="48.033" classname="should check the alipay payment process">
+      <failure message="Waiting for element to be located By(css selector, .payAmount-area)
+Wait timed out after 30057ms" type="TimeoutError"><![CDATA[TimeoutError: Waiting for element to be located By(css selector, .payAmount-area)
+Wait timed out after 30057ms
+    at /home/travis/build/wirecard/magento-ee/node_modules/selenium-webdriver/lib/webdriver.js:841:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="iDEAL test" timestamp="2019-09-27T06:56:35" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/IdealTest.js" failures="2" time="385.605">
+    <testcase name="iDEAL test should check the ideal payment process" time="383.928" classname="should check the ideal payment process">
+      <failure message="ETIMEDOUT connect ETIMEDOUT 207.254.8.4:80" type="Error"><![CDATA[Error: ETIMEDOUT connect ETIMEDOUT 207.254.8.4:80
+    at ClientRequest.<anonymous> (node_modules/selenium-webdriver/http/index.js:258:15)
+    at Socket.socketErrorListener (_http_client.js:387:9)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)]]></failure>
+    </testcase>
+    <testcase name="iDEAL test &quot;after all&quot; hook" time="1.677" classname="&quot;after all&quot; hook">
+      <failure message="Session not started or terminated" type="WebDriverError"><![CDATA[WebDriverError: Session not started or terminated
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:585:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:554:13)
+    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:489:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Giropay test" timestamp="2019-09-27T07:03:39" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/GiropayTest.js" failures="2" time="131.24900000000002">
+    <testcase name="Giropay test should check the giropay payment process" time="130.8" classname="should check the giropay payment process">
+      <failure message="ETIMEDOUT connect ETIMEDOUT 207.254.8.4:80" type="Error"><![CDATA[Error: ETIMEDOUT connect ETIMEDOUT 207.254.8.4:80
+    at ClientRequest.<anonymous> (node_modules/selenium-webdriver/http/index.js:258:15)
+    at Socket.socketErrorListener (_http_client.js:387:9)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)]]></failure>
+    </testcase>
+    <testcase name="Giropay test &quot;after all&quot; hook" time="0.449" classname="&quot;after all&quot; hook">
+      <failure message="Session not started or terminated" type="WebDriverError"><![CDATA[WebDriverError: Session not started or terminated
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:585:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:554:13)
+    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:489:26)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="default test" timestamp="2019-09-27T07:05:56" tests="1" file="/home/travis/build/wirecard/magento-ee/tests/Selenium/Payments/DefaultTest.js" failures="0" time="17.436">
+    <testcase name="default test should check the default checkout" time="17.436" classname="should check the default checkout">
+    </testcase>
+  </testsuite>
+</testsuites>

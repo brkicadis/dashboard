@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="570.216" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-09-16T11:04:49" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Shopware 1 master" timestamp="2019-09-16T11:04:49" tests="1" file="/home/travis/shopware/custom/plugins/WirecardElasticEngine/Tests/Selenium/Payments/PiaTest.js" failures="0" time="62.513">
+    <testcase name="Shopware 1 master should check the pia payment process" time="62.513" classname="should check the pia payment process">
+    </testcase>
+  </testsuite>
+  <testsuite name="Shopware 2 master" timestamp="2019-09-16T11:05:59" tests="1" file="/home/travis/shopware/custom/plugins/WirecardElasticEngine/Tests/Selenium/Payments/CreditCardTest.js" failures="0" time="40.981">
+    <testcase name="Shopware 2 master should check the credit card payment process" time="40.981" classname="should check the credit card payment process">
+    </testcase>
+  </testsuite>
+</testsuites>
