@@ -1,0 +1,8 @@
+[
+{"Woocommerce": "5.6"},
+{"Shopware": "5.6, 7.0"},
+{"Magento2": "5.6, 7.0, 7.1"},
+{"Magento": "5.6, 7.0, 7.1, 7.2"},
+{"Opencart": "7.0"},
+{"Prestashop": "7.1"}
+]

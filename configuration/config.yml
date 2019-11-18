@@ -1,0 +1,4 @@
+plugins:
+  - https://github.com/brkicadis/woocommerce-ee/releases
+  - https://github.com/brkicadis/shopware-ee/releases
+  - https://github.com/brkicadis/magento2-ee/releases
