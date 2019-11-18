@@ -41,7 +41,6 @@ def get_date_from_report_link_data(project_name, gateway):
     return s_date
 
 
-# find report.xml file {C:\dev\code\FAKE REPOSITORIES\dashboard-two-pages\woocommerce-ee-3.7.0\API-WDCEE-TEST\2019-08-26\report.xml}
 def find_latest_result_file(location, project, gateway):
     global report_link_data
     dates = []
@@ -50,14 +49,39 @@ def find_latest_result_file(location, project, gateway):
             dates.append(datetime.strptime(sub_dirs, date_format))
         latest = max(d for d in dates)
         report_link_data = add_to_dict_array(report_link_data, project, {gateway: latest.strftime(date_format)})
-        # <------------------------------------------->
-        # for dirs in os.listdir(os.path.abspath(os.path.join(location, latest.strftime(date_format)))):
-        #     print dirs
-        # return os.path.join(location, latest.strftime(date_format), dirs, report_file)
-        # <------------------------------------------->
         return os.path.join(location, latest.strftime(date_format), report_file)
     else:
         return None
+
+def createTestResultsDictionary():
+    searchRootDirectory = os.getcwd() + "/model"
+    testResultsDictionary = {}
+    for directory in os.listdir(searchRootDirectory):
+        if directory not in searchIgnoreFolders:
+            pluginName = directory
+            gatewayTestResults = []
+            for subdirectory in os.listdir(os.path.join(searchRootDirectory, directory)):
+                dateDirectory = []
+                gateway = subdirectory
+                for dates in os.listdir(os.path.join(searchRootDirectory, directory, subdirectory)):
+                    dateDirectory.append(datetime.strptime(dates, dateFormat))
+                latestDate = max(singleDate for singleDate in dateDirectory)
+                convertDateFormat = latestDate.strftime(dateFormat)
+                latestDatePath = os.path.join(searchRootDirectory, directory, subdirectory, convertDateFormat)
+                findBranches(latestDatePath)
+                for branch in findBranches(latestDatePath):
+                    reportResultFile = findLatestResultFiles(os.path.join(latestDatePath, branch))
+                    if reportResultFile:
+                        gatewayTestResults.append(process_results_file(gateway, reportResultFile))
+                        # refactorTestResults(gateway, reportResultFile, pluginName, convertDateFormat, branch)
+                        for testGateway, testResults in process_results_file(gateway, reportResultFile).iteritems():
+                            gatewayBasedTestResults = {testGateway: {pluginName: {convertDateFormat: {branch: testResults}}}}
+                            for singleTestGateway, singleGatewayTestResults in gatewayBasedTestResults.iteritems():
+                                for testPluginName, pluginNameTestResults in singleGatewayTestResults.iteritems():
+                                    for pluginNameBasedDate, dateTestResults in pluginNameTestResults.iteritems():
+                                        for dateBasedBranch, branchTestResults in dateTestResults.iteritems():
+                                            testResultsDictionary.setdefault(singleTestGateway, {}).setdefault(testPluginName, {}).setdefault(pluginNameBasedDate, {}).update({dateBasedBranch: branchTestResults})
+    return testResultsDictionary
 
 
 def process_results_file(gateway, result_file):
